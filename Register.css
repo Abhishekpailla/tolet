@@ -1,0 +1,85 @@
+/* Font Awesome CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.register-page {
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.register-box {
+  background-color: #000;
+  border: 2px solid transparent;
+  border-image: linear-gradient(45deg, #00ffff, #ffcc00) 1;
+  padding: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  text-align: center;
+}
+
+.register-box h2 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+/* Input container */
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* ICON STYLE - Centered vertically */
+.input-box i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+/* Input field style with enough padding for icon */
+.input-box input {
+  width: 100%;
+  padding: 12px 12px 12px 40px; /* Left padding for icon space */
+  background: #111;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #00ffff, #ffcc00);
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.register-btn:hover {
+  opacity: 0.85;
+}
+
+.register-links {
+  margin-top: 15px;
+}
+
+.register-links a {
+  color: #00ffff;
+  text-decoration: none;
+  font-size: 14px;
+}

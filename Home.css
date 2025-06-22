@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: white;
+  overflow-x: hidden;
+}
+
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: radial-gradient(circle at top left, #00ffff22, transparent), 
+              radial-gradient(circle at bottom right, #ffcc0022, transparent);
+  animation: gradientFloat 12s ease-in-out infinite alternate;
+}
+
+@keyframes gradientFloat {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.home-header {
+  text-align: center;
+  max-width: 950px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  padding: 50px 30px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  animation: slideIn 1.5s ease-out, pulse 10s infinite alternate;
+  position: relative;
+}
+
+.home-logo {
+  width: 100px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in;
+  filter: drop-shadow(0 0 10px #00ffffaa);
+}
+
+.animated-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(90deg, #00ffff, #ffcc00, #00ffff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+
+.animated-subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 35px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  animation: fadeIn 2s ease;
+}
+
+.home-btn {
+  padding: 12px 26px;
+  background: linear-gradient(to right, #00ffff, #ffcc00);
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+.home-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+              0 0 30px rgba(0, 255, 255, 0.4);
+  background: linear-gradient(to right, #ffcc00, #00ffff);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 20px #00ffff55;
+  }
+  100% {
+    box-shadow: 0 0 30px #ffcc0055;
+  }
+}

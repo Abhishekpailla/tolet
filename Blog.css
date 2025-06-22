@@ -1,0 +1,78 @@
+.blog-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.blog-toggle-buttons button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.blog-toggle-buttons .latest {
+  background: linear-gradient(to right, #feda75, #ff9900);
+  color: #000;
+}
+
+.blog-toggle-buttons .trending {
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+  color: #000;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.blog-card {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: scale(1.03);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-card-content {
+  padding: 1rem;
+}
+
+.blog-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.blog-card p {
+  font-size: 0.95rem;
+  color: #bbb;
+}

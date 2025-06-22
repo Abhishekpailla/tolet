@@ -1,0 +1,62 @@
+/* Import Font Awesome (optional, only if needed for icons) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.getintouch-page {
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.getintouch-container {
+  background-color: #000;
+  border: 2px solid transparent;
+  border-image: linear-gradient(45deg, #00ffff, #ffcc00) 1;
+  padding: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  text-align: center;
+  color: white;
+}
+
+.getintouch-container h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #ffcc00;
+}
+
+.getintouch-container p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #00ffff, #ffcc00);
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.contact-button:hover {
+  opacity: 0.85;
+}
+
+.map-container {
+  margin-top: 30px;
+}
+
+.map-container h3 {
+  margin-bottom: 10px;
+  color: #00ffff;
+}
